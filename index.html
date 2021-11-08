@@ -13,7 +13,7 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <style>
         .drk:after {
             content: "";
@@ -41,17 +41,29 @@
         }
 
         h2 {
-            font-family: 'Alegreya', serif;
+            font-family: 'Playfair Display', serif;
             font-weight: 600;
             font-style: italic;
             text-decoration: underline blue;
+        }
+
+        h3 {
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .progress-bar .inner-text {
+            font-weight: 700;
+            font-style: italic;
+            text-align: right;
+            padding-right: 10px;
         }
     </style>
 
 </head>
 
 <body>
-
+    <!-- navbar start -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -84,8 +96,8 @@
             </div>
         </div>
     </nav>
-
-
+    <!-- navbar end -->
+    <!-- slider -->
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -129,9 +141,9 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <!-- slider end -->
 
-
-
+    <!-- section 2 start -->
 
     <section class="py-5 pb-3 text-center container" style="background-color: royalblue;">
         <div class="row  py-lg-5">
@@ -163,46 +175,57 @@
             </div>
         </div>
     </section>
+    <!-- section 2 end -->
 
-    <div class="container py-5" style="background-color: rgb(215, 215, 219);">
+    <!-- section 3 start -->
+    <div class="container-fluid py-5" style="background-color: rgb(215, 215, 219);">
         <!-- add header MY SKILLS -->
         <h2 class="text-center">My Skills</h2>
         <div class="row">
-            <div class="col-2">
+            <div class="col">
             </div>
 
+
+            <div class="col-4">
+                <h3>Wordpress</h3>
+                <div class="progress mb-5 border border-dark" style="height: 24px;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <p class="inner-text mt-3">90%</p>
+                    </div>
+                </div>
+
+                <h3>HTML</h3>
+                <div class="progress mb-5 border border-dark" style="height: 24px;">
+
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 45%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <p class="inner-text mt-3">45%</p>
+                    </div>
+                </div>
+
+                <h3>CSS/BOOTSTRAP</h3>
+                <div class="progress mb-5 border border-dark" style="height: 24px;">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <p class="inner-text mt-3">30%</p>
+                    </div>
+                </div>
+                <h3>Blockchain</h3>
+                <div class="progress mb-5 border border-dark" style="height: 24px;">
+
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <p class="inner-text mt-3">75%</p>
+                    </div>
+                </div>
+            </div>
 
             <div class="col">
-                <h3>dd</h3>
-                <div class="progress mb-5 border border-dark" style="height: 24px;">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-
-                <h3>dd</h3>
-                <div class="progress mb-5 border border-dark" style="height: 24px;">
-
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-
-                <h3>dd</h3>
-                <div class="progress mb-5 border border-dark" style="height: 24px;">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h3>dd</h3>
-                <div class="progress mb-5 border border-dark" style="height: 24px;">
-
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-
-            <div class="col-2">
             </div>
         </div>
     </div>
+    <!-- section 3 end -->
 </body>
 
 </html>
