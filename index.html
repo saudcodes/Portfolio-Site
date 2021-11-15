@@ -24,7 +24,7 @@
             left: 0;
             right: 0;
             background: black;
-            opacity: 0.3;
+            opacity: 0.4;
             z-index: 1;
         }
 
@@ -81,6 +81,39 @@
         a {
             color: inherit;
         }
+
+        a:hover {
+            transform: scale(1.1);
+            transition: all ease 500ms;
+        }
+
+        .carousel-item {
+            height: 85vh;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-inner>.carousel-item>img,
+        .carousel-inner>.carousel-item>a>img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+            line-height: 1;
+            width: 100%;
+        }
+
+        h5 {
+            font-size: 30px;
+            font-style: italic;
+        }
+
+        .navbar {
+            background-image: linear-gradient(to right, rgb(28, 107, 224), rgb(75, 180, 241));
+        }
+
+        .navbar-brand {
+            font-style: italic;
+        }
     </style>
 
 </head>
@@ -89,7 +122,7 @@
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Saudcodes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -101,20 +134,20 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#about-me">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#my-skills">Skills</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#my-portfolio">Portfolio</a>
                     </li>
 
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -132,24 +165,24 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item drk active">
-                <img src="https://source.unsplash.com/1400x600/?tech" class="d-block h-100" alt="...">
+                <img src="https://source.unsplash.com/1400x600/?positive,happy" class="d-block h-100 mw-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>The world always looks brighter from behind a smile.</h5>
+
                 </div>
             </div>
             <div class="carousel-item drk">
-                <img src="https://source.unsplash.com/1400x600/?tech,ai" class="d-block h-100 " alt="...">
+                <img src="https://source.unsplash.com/1400x600/?nature" class="d-block h-100 " alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <h5>Take Some time, Look outside How beautiful the World is, Enjoy Every Moment</h5>
+
                 </div>
             </div>
             <div class="carousel-item drk">
-                <img src="https://source.unsplash.com/1400x600/?tech,intelligence" class="d-block h-100" alt="...">
+                <img src="https://source.unsplash.com/1400x600/?knowledge" class="d-block h-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h5>The greatest enemy of knowledge is not ignorance, it is the illusion of knowledge.</h5>
+                    <p>- Stephan Hawking</p>
                 </div>
             </div>
         </div>
@@ -171,7 +204,7 @@
     <section class="py-5 pb-3 text-center container" style="background-color: royalblue;">
         <div class="row  py-lg-5">
             <div class="col-lg-8  col-md-8 mx-auto">
-                <h2 class="fw-;ight">About ME</h2>
+                <h2 id="about-me" class="fw-right">About ME</h2>
                 <p class="lead text-muted">Something short and leading about the collection below—its contents, the
                     creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
                     entirely.</p>
@@ -203,7 +236,7 @@
     <!-- section 3 start -->
     <div class="container-fluid py-5" style="background-color: rgb(215, 215, 219);">
         <!-- add header MY SKILLS -->
-        <h2 class="text-center">My Skills</h2>
+        <h2 id="my-skills" class="text-center">My Skills</h2>
         <div class="row">
             <div class="col">
             </div>
@@ -254,7 +287,7 @@
     <div class="container-fluid py-5" style="background-color: rgb(255, 255, 255); display: flex;
             justify-content: center;
             flex-direction: column;">
-        <h2 class="text-center pb-3">My Portfolio</h2>
+        <h2 id="my-portfolio" class="text-center pb-3">My Portfolio</h2>
         <div class="row " style="width: 65vw; margin: auto;">
             <!-- added width 60% of the div so the content doesnt taKE UP entire div just in center and leave space in left and right of container, also added vw so it takes 60% width according to size of viewport -->
             <div class="col-4">
@@ -271,7 +304,7 @@
                         <span class="d-block text-sm fst-italic text-decoration-underline fntt"> Wordpress, CSS
                         </span>
                         <!-- Title -->
-                        <a href="https://saudaijaz.ml/" target="_blank">
+                        <a href="https://saudaijaz.ml/" target="_blank" class="title-projects">
                             <h3 class="h4">Crypto Blog Site</h3>
                         </a>
 
@@ -306,7 +339,7 @@
                             CSS,
                         </span>
                         <!-- Title -->
-                        <a href="https://codepen.io/saudcodes/pen/oNeaqOM" target="_blank">
+                        <a href="https://codepen.io/saudcodes/pen/oNeaqOM" target="_blank" class="title-projects">
                             <h3 class="h4">Product Landing Page</h3>
                         </a>
 
@@ -336,7 +369,7 @@
                             CSS
                         </span>
                         <!-- Title -->
-                        <a href="https://codepen.io/saudcodes/pen/BadqRod" target="_blank">
+                        <a href="https://codepen.io/saudcodes/pen/BadqRod" target="_blank" class="title-projects">
                             <h3 class="h4">Survey Form</h3>
                         </a>
 
@@ -354,6 +387,7 @@
         </div>
     </div>
     </div>
+    <!-- add dummy contact form  -->
 </body>
 
 </html>
